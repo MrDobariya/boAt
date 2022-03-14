@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1f31;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #aba9b4;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all ease 0.5s;
+}
+
+header ul li a:hover {
+    color: red;
+}
+
+header ul li a.btn {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+header ul li a.btn:hover {
+    background: #615c59;
+}
+
+
+/* submenu */
+
+ul ul {
+    min-width: 250px;
+    position: absolute;
+    padding: 10px 0;
+    opacity: 0;
+    z-index: -9999;
+    transition: all ease 0.5s;
+}
+
+ul li:hover ul {
+    opacity: 1;
+    z-index: 9;
+    padding: 30px 0;
+}
+
+ul ul li {
+    margin: 0;
+    width: 100%;
+}
+
+ul ul li a {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    background-color: #383a58;
+    color: #fff;
+}
+
+ul ul li :first-child a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+ul ul li :last-child a {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+ul ul li a:hover {
+    background-color: red;
+    color: #fff;
+}
+
+
+/* container */
+
+.container {
+    position: relative;
+}
+
+
+/* center */
+
+.center {
+    height: 55vh;
+}
+
+.container .card {
+    margin-left: 10px;
+}
+
+.container .card .card1 {
+    position: absolute;
+    background: #80808036;
+    border-radius: 30px;
+}
+
+.container .card .card1 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 10%;
+}
+
+.container .card .card1 a:hover {
+    color: #fff;
+    background: red;
+    transition: 0.5s;
+}
+
+.container .card .card1 .info,
+.price {
+    text-align: center;
+    margin-left: 5%;
+    color: red;
+}
+
+.container .card .card1 .info h3 {
+    color: #fff;
+}
+
+
+/* table viwe*/
+
+table .img1-4 {
+    border: 1px solid white;
+    padding: 200px;
+    width: 200px;
+}
+
+#img1,
+#img5 {
+    position: relative;
+    left: 90px;
+    animation: animate 0.5s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        width: 290px;
+    }
+}
+
+#img2,
+#img6 {
+    position: relative;
+    left: 400px;
+}
+
+#img3,
+#img7 {
+    position: relative;
+    left: 720px;
+}
+
+#img4,
+#img8 {
+    position: relative;
+    left: 1030px;
+}

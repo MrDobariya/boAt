@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="list.css">
+    <script src="/jquery-3.6.0.min.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo"><img src="image/boat_logo.webp" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="#">Shop</a>
+                    <ul>
+                        <li>
+                            <a href="#">headphones</a>
+                            <a href="#">smart-watch</a>
+                            <a href="#">trimmer</a>
+                            <a href="#">airpods</a>
+                            <a href="#">usb</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">TRebel</a></li>
+                <li><a href="#">Daily deals</a></li>
+                <li><a href="#">More</a></li>
+                <li><a class="btn" href="#">Explore</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <div class="img1-4">
+            <tr>
+                <th id="img1">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch_blue.webp" width="250px" alt="">
+                                    <div class="info">
+                                        <h3> Watch Mercury</h3>
+                                        <h4 class="price">Rs. 2,499.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th id="img2">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch2.webp" width="250px" alt=" ">
+                                    <div class="info">
+                                        <h3> Watch Blaze</h3>
+                                        <h4 class="price">Rs. 3,499.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th id="img3">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch3.webp" width="250px" alt=" ">
+                                    <div class="info">
+                                        <h3> Watch boAt Iris</h3>
+                                        <h4 class="price">Rs. 4,499.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th id="img4">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch4.webp" width="250px" alt=" ">
+                                    <div class="info">
+                                        <h3> Watch boAt Xtend</h3>
+                                        <h4 class="price">Rs. 2,999.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </div>
+        <div class="img5-8">
+            <tr>
+                <th id="img5">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch5.webp" width="250px" alt=" ">
+                                    <div class="info">
+                                        <h3> Watch Strom</h3>
+                                        <h4 class="price">Rs. 2,799.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th id="img6">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch7.webp" width="250px" alt=" ">
+                                    <div class="info">
+                                        <h3>TRebel Watch Blaze</h3>
+                                        <h4 class="price">Rs. 3,499.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th id="img7">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch8.webp" width="250px" alt=" ">
+                                    <div class="info">
+                                        <h3>boAt Watch Flash</h3>
+                                        <h4 class="price">Rs. 2,499.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th id="img8">
+                    <div class="center">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card1">
+                                    <img src="image/watch6.webp" width="250px" alt=" " onMouseOver="fade(this,0.4)" onMouseOut="fade(this,1)">
+                                    <div class="info">
+                                        <h3>TRable Watch Xtend</h3>
+                                        <h4 class="price">Rs. 2,999.00</h4>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </div>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            $("#img1").hover(function() {
+
+
+            });
+        });
+    </script>
+</body>
+
+</html>

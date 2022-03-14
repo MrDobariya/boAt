@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <link rel="stylesheet" href="watch.css">
+    <script src="/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="image/watch_blue.webp" style="width: 550px;" id="blur" alt="">
+                <img src="image/watch_blue.webp" style="width: 450px;" id="blue" alt="">
+            </div>
+            <div class="contentBx">
+                <h2>boAt Watch</h2>
+                <div class="size">
+                    <h3>Size :</h3>
+                    <span>39</span>
+                    <span>40</span>
+                    <span>41</span>
+                    <span>42</span>
+                </div>
+                <div class="color">
+                    <h3>Color :</h3>
+                    <span id="blue"></span>
+                    <span id="cream"></span>
+                    <span id="mercury"></span>
+                </div>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('#blue').click(function() {
+                $("img").attr('str', "image / watch_blue.webp ")
+            });
+            $('#cream').click(function() {
+                $("img").attr('str', "image/watch_cream.webp")
+            });
+            $('#mercury').click(function() {
+                $("img").attr('str', "image/watch_cream.webp")
+            });
+        });
+    </script>
+</body>
+
+</html>
